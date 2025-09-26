@@ -909,6 +909,70 @@ section {
     font-size: 0.9rem;
 }
 
+/* Estilos para la información del punto de entrega */
+.delivery-info {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 25px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.delivery-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff9800, #ff5722);
+}
+
+.delivery-alert {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.delivery-alert i {
+    margin-right: 12px;
+    font-size: 1.4rem;
+    color: #ff9800;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.delivery-details {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.delivery-details p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.delivery-details strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+.delivery-details i {
+    margin-right: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 /* Footer */
 .footer {
     background: #333;
@@ -1055,6 +1119,23 @@ section {
         max-width: 250px;
         justify-content: center;
     }
+    
+    .delivery-info {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .delivery-alert {
+        font-size: 1rem;
+    }
+    
+    .delivery-details {
+        padding: 12px;
+    }
+    
+    .delivery-details p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1081,5 +1162,13 @@ section {
     
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .delivery-alert i {
+        font-size: 1.2rem;
+    }
+    
+    .delivery-details p {
+        font-size: 0.85rem;
     }
 }
