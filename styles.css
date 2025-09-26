@@ -938,15 +938,17 @@ section {
     align-items: center;
     margin-bottom: 15px;
     color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .delivery-alert i {
-    margin-right: 12px;
-    font-size: 1.4rem;
+    margin-right: 20px;
+    font-size: 1.6rem;
     color: #ff9800;
     animation: pulse 2s ease-in-out infinite;
+    vertical-align: middle;
 }
 
 .delivery-details {
